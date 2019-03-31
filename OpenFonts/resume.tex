@@ -1,0 +1,258 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+    
+\pagestyle{fancy}
+\fancyhf{}
+    
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Ziyang}{Feng}{ \urlstyle{same}\href{mailto:fuujiro@qq.com}{fuujiro@qq.com} | +86 155-2489-2259
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.25\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{Dalian Univ. of Technology}
+\descript{B.E. in Computer Science}
+\descript{GPA: 85.2/100}
+\location{2016.09-2020.06}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links}
+\sectionsep
+Blog://  \href{https://blog.fuujiro.com/}{\bf blog.fuujiro.com} \\  
+Github:// \href{https://github.com/fuujiro}{\bf @fuujiro} \\
+LinkedIn://  \href{https://www.linkedin.com/in/fuujiro}{\bf fuujiro} \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Intro
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Introduction}
+\subsection{Apply:\  Software Development Engineer}
+I love programming \\
+Familiar with \textbf{C/C++} language \\
+Understand and use Linux/Unix systems \\
+Comprehend \textbf{Redis} and database principles \\
+passionate about \textbf{open source} projects \\
+Hope to be a good software engineer \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\sectionsep
+\subsection{Programming}
+\location{Programming Language}
+C++ \textbullet{} C \textbullet{} Python \textbullet{} \LaTeX \\
+\location{Operating System}
+Linux/Unix \textbullet{} Shell \textbullet{} Vim \\
+\location{Database}
+Redis \textbullet{} SQL \\ 
+\sectionsep
+
+\subsection{Language}
+\location{native}
+Mandarin \\
+\location{fluent}
+English \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.73\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+\sectionsep
+\runsubsection{\href{https://github.com/fuujiro/JiroOS}{\bf JiroOS}}
+\descript{A toy Operating System}
+\location{2019.3}
+\vspace{\topsep}
+\begin{tightemize}
+    \item X86-based tiny operating system, supported physical machines and virtual machine such as bochs
+    \item Implement segment/page memory allocation, process thread management, synchronous asynchronous mutual exclusion, I/O process communication and file system
+    \item Referring to other open source implementations, 64-bit extensions and ARM architecture adaptations are being implemented
+    \end{tightemize}
+\sectionsep
+
+\runsubsection{\href{https://github.com/fuujiro/socket}{\bf Socket}}
+\descript{Unix Networking Programming / socket / Chatting room}
+\location{2018.12}
+\begin{tightemize}
+    \item Implement TCP/UDP socket network Programming
+    \item IO multiplexing with select/poll/epoll model
+    \item Develop a Chatting room based on select model
+    \end{tightemize}
+\sectionsep
+
+\runsubsection{\href{https://github.com/fuujiro/LIMS}{\bf LIMS}}
+\descript{Library Information Management System}
+\location{2017.6}
+\begin{tightemize}
+    \item With book add, delete, modify \& three-way search , Bestseller recommendation function
+    \item Own administrator \& user the two relationship, with account recovery function, color interactive terminal interface
+    \item \href{https://github.com/fuujiro/LIMS}{\bf LIMS} has \textbf{42 stars} in GitHub, which becomes one of the most popular \textbf{Library Information Management System}$^{C \ tag}$ projects
+    \end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\sectionsep
+\runsubsection{National Undergraduate Training Programs for Innovation and Entrepreneurship}
+\descript{Undergraduate Research in Robotic Calibration}
+\location{2018.01 - Present | Dalian, China}
+\begin{tightemize}
+    \item Research on Robot Arm Calibration Based on Zhengyou-Zhang Calibration Algorithm
+    \item Try the new calibration board marked by ARUco, optimize the original calibration algorithm
+    \item Our \href{https://github.com/DUT-RVLab}{\bf DUT-RVLab} update research progress on GitHub
+    \end{tightemize}
+\sectionsep
+
+\runsubsection{Cardiff University, UK}
+\descript{Big Data \& HPC Summer School}
+\location{2018.07 - 2018.08 | Cardiff, UK}
+\begin{tightemize}
+    \item Participate in a school-funded summer exchange program with School of Engneering, Cardiff University
+    \item Learn about big data, machine learning and high performance computing
+    \item Successfully completed the final Hackathon closing project, implementing a demo of gesture recognition
+    \end{tightemize}
+\sectionsep
+
+\runsubsection{"WeGeek" WeChat Mini Program hackathon}
+\descript{"Time Cross" Mini Program}
+\location{2018.12 | Beijing, China}
+\begin{tightemize}
+    \item Participate in the WeChat Mini Program hackathon jointly organized by \textbf{Segmentfault} and \textbf{WeChat}
+    \item Developed a mini program that tried to replace the \textbf{Tencent Document}
+    \end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     OPEN SOURCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Open Source Contributions}
+%\begin{tabular}{ll}
+%\href{https://github.com/chyyuu/ucore_os_lab}{\bf chyyuu/ucore\_os\_lab} & Submit labanswer and support for IO multiplexing and x86 extensions \\
+%\end{tabular}
+%\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Awards} 
+\begin{tabular}{rll}
+2018	     & 1st Prize  & Liaoning Computer Multimedia Design Competition + Scholarship \\
+2018         & 2nd Prize  & The 8th APMCM Asia Pacific Mathematical Modeling Competition in 2018 \\
+2017	     & 1st Prize  & 2017 \textbf{Ti} Cup Electronic Design Competition of Dalian Univ. of Tech. \\
+2017         & 2nd Prize  & The 26th Dalian Mathematics Competition in University Student \\
+\end{tabular}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Publications} 
+% \renewcommand\refname{\vskip -1.5cm} % Couldn't get this working from the .cls file
+% \bibliographystyle{abbrv}
+% \bibliography{publications}
+% \nocite{*}
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
