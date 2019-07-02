@@ -34,18 +34,30 @@
 \setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Helvetica Neue UltraLight}
 
 % Date command
+<<<<<<< HEAD
 \setlength{\TPHorizModule}{1mm}
+=======
+\setlength{\TPHorizModule}{1mm}
+>>>>>>> e312df501bac47a0bd59885e0ed17540081a0d35
 \setlength{\TPVertModule}{1mm}
 \textblockorigin{0mm}{5mm} % start everyth
 \newcommand{\lastupdated}{\begin{textblock}{60}(155,0)
 \color{date}\fontspec{Helvetica Neue Light}\fontsize{8pt}{10pt}\selectfont 
 Last Updated on
+<<<<<<< HEAD
 \today
+=======
+\today
+>>>>>>> e312df501bac47a0bd59885e0ed17540081a0d35
 \end{textblock}}
 
 \newcommand{\leftdetails}[1]{\begin{textblock}{60}(170,5)
 \color{date}\fontspec{Helvetica Neue Light}\fontsize{8pt}{10pt}\selectfont 
+<<<<<<< HEAD
 #1
+=======
+#1
+>>>>>>> e312df501bac47a0bd59885e0ed17540081a0d35
 \end{textblock}}
 
 
